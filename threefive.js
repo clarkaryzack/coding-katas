@@ -1,16 +1,13 @@
-function threeFive() {
+function threeFive(end) {
   var x = 1
   var sum = 0
-  while (x<1000) {
-    if (x%3===0) {
+  while (x<end) {
+    if (x%3===0 || x%5===0) {
       sum += x;
-      x++;
     }
-		 if (x%5===0) {
-        sum += x
-      } x++
+    x++;
   }
   return sum
 }
 
-console.log(threeFive())
+console.log(threeFive(1000))
